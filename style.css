@@ -15,4 +15,21 @@ table {
 }
 #dataTable {
     border: 2px solid black;
+    border-radius: 10px;
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
+.button {
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: cyan;
+    padding: 5px;
+    margin: 5px;
+    color: black;
+}
+.button:hover {
+    background: #aaffff
 }
