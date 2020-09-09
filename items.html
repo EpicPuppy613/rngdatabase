@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Dice Adventure Item Database</title>
+    </head>
+    <body>
+        <h3><a href="index.html">Back to Home</a></h3>
+        <table>
+            <tr>
+                <th class = "table"><input size="30" class="input" id="itemInput" type="text" onkeyup="searchItems()" placeholder="Search Items (Case Sensitive)" title="search"></th>
+                <th class = "table"><input size="30" class="input" id="typeInput" type="text" onkeyup="searchTypes()" placeholder="Search Types (Case Sensitive)" title="search"></th>
+                <th class = "table"><input size="30" class="input" id="costInput" type="text" onkeyup="searchCosts()" placeholder="Search Costs (Case Sensitive)" title="search"></th>
+            </tr>
+        </table>
+        <table id="dataTable">
+            <tr class = "header">
+            <th class = "table">Item</th>
+            <th class = "table">Type</th>
+            <th class = "table">Cost</th>
+            </tr>
+            <div id="a">
+                <tr>
+                    <td><a href="items/a/air-wand.html">Air Wand</a></td>
+                    <td>Wand - Air - Magic</td>
+                    <td>1000G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/a/aqueous-wand.html">Aqueous Wand</a></td>
+                    <td>Wand - Water - Magic</td>
+                    <td>2500G</td>
+                </tr>
+            </div>
+            <div id="b">
+            </div>
+            <div id="c">
+                <tr>
+                    <td><a href="items/c/chainmail-armor.html">Chainmail Armor</a></td>
+                    <td>Chainmail - Armor - Body</td>
+                    <td>1000G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/c/chainmail-boots.html">Chainmail Boots</a></td>
+                    <td>Chainmail - Armor - Boots</td>
+                    <td>500G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/c/copper-shield-durable.html">Copper Durable Shield</a></td>
+                    <td>Copper - Shield - Durable</td>
+                    <td>500G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/c/copper-shield-flimsy.html">Copper Flimsy Shield</a></td>
+                    <td>Copper - Shield - Flimsy</td>
+                    <td>200G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/c/chainmail-helmet.html">Chainmail Helmet</a></td>
+                    <td>Chainmail - Armor - Helmet</td>
+                    <td>500G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/c/copper-sword-long.html">Copper Longsword</a></td>
+                    <td>Copper - Sword - Long</td>
+                    <td>200G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/c/copper-screw.html">Copper Screw</a></td>
+                    <td>Copper - Screw - Repair</td>
+                    <td>50G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/c/copper-sword-short.html">Copper Shortsword</a></td>
+                    <td>Copper - Sword - Short</td>
+                    <td>150G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/c/copper-wrench.html">Copper Wrench</a></td>
+                    <td>Copper - Wrench - Repair</td>
+                    <td>150G</td>
+                </tr>
+            </div>
+            <div id="d">
+            </div>
+            <div id="e">
+                <tr>
+                    <td><a href="items/e/earth-wand.html">Earth Wand</a></td>
+                    <td>Wand - Earth - Magic</td>
+                    <td>1000G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/e/electric-wand.html">Electric Wand</a></td>
+                    <td>Wand - Electric - Magic</td>
+                    <td>1000G</td>
+                </tr>
+            </div>
+            <div id="f">
+                <tr>
+                    <td><a href="items/f/fire-wand.html">Fire Wand</a></td>
+                    <td>Wand - Fire - Magic</td>
+                    <td>1000G
+                    </td>
+                </tr>
+            </div>
+            <div id="g">
+            </div>
+            <div id="h">
+                <tr>
+                    <td><a href="items/h/healing-wand.html">Healing Wand</a></td>
+                    <td>Wand - Healing - Magic</td>
+                    <td>(Special)</td>
+                </tr>
+            </div>
+            <div id="i">
+                <tr>
+                    <td><a href="items/i/iron-armor.html">Iron Armor</a></td>
+                    <td>Iron - Armor - Body</td>
+                    <td>2000G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/i/iron-boots.html">Iron Boots</a></td>
+                    <td>Iron - Armor - Boots</td>
+                    <td>1000G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/i/iron-shield-durable.html">Iron Durable Shield</a></td>
+                    <td>Iron - Shield - Durable</td>
+                    <td>1500G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/i/iron-shield-flimsy.html">Iron Flimsy Shield</a></td>
+                    <td>Iron - Shield - Flimsy</td>
+                    <td>500G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/i/iron-helmet.html">Iron Helmet</a></td>
+                    <td>Iron - Armor - Helmet</td>
+                    <td>1000G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/iron-sword-long.html">Iron Longsword</a></td>
+                    <td>Iron - Sword - Long</td>
+                    <td>500G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/i/iron-screw.html">Iron Screw</a></td>
+                    <td>Iron - Screw - Repair</td>
+                    <td>200G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/i/iron-sword-short.html">Iron Shortsword</a></td>
+                    <td>Iron - Sword - Short</td>
+                    <td>400G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/i/iron-wrench.html">Iron Wrench</a></td>
+                    <td>Iron - Wrench - Repair</td>
+                    <td>500G</td>
+                </tr>
+            </div>
+            <div id="j">
+            </div>
+            <div id="k">
+            </div>
+            <div id="l">
+                <tr>
+                    <td><a href="items/l/potion-health-lasting.html">Lasting Health Potion</a></td>
+                    <td>Potion - Healing</td>
+                    <td>650G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/l/potion-resistance-lasting.html">Lasing Resistance Potion</a></td>
+                    <td>Potion - Resistance</td>
+                    <td>650G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/l/potion-stamina-lasting.html">Lasting Stamina Potion</a></td>
+                    <td>Potion - Stamina</td>
+                    <td>650G</td>
+                </tr>
+            </div>
+            <div id="m">
+                <tr>
+                    <td><a href="items/m/potion-health-major.html">Major Health Potion</a></td>
+                    <td>Potion - Healing</td>
+                    <td>1000G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/m/potion-resistance-major.html">Major Resistance Potion</a></td>
+                    <td>Potion - Resistance</td>
+                    <td>1000G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/m/potion-stamina-major.html">Major Stamina Potion</a></td>
+                    <td>Potion - Stamina</td>
+                    <td>1000G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/m/sword-master-1.html">Master Sword (Level 1)</a></td>
+                    <td>Master - Sword</td>
+                    <td>(Special)</td>
+                </tr>
+                <tr>
+                    <td><a href="items/m/sword-master-2.html">Master Sword (Level 2)</a></td>
+                    <td>Master - Sword</td>
+                    <td>(Special)</td>
+                </tr>
+                <tr>
+                    <td><a href="items/m/sword-master-3.html">Master Sword (Level 3)</a></td>
+                    <td>Master - Sword</td>
+                    <td>(Special)</td>
+                </tr>
+                <tr>
+                    <td><a href="items/m/sword-master-4.html">Master Sword (Level 4)</a></td>
+                    <td>Master - Sword</td>
+                    <td>(Special)</td>
+                </tr>
+                <tr>
+                    <td><a href="items/m/mending-wand.html">Mending Wand</a></td>
+                    <td>Wand - Healing - Magic</td>
+                    <td>(Special)</td>
+                </tr>
+                <tr>
+                    <td><a href="items/m/potion-health-minor.html">Minor Health Potion</a></td>
+                    <td>Potion - Healing</td>
+                    <td>100G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/m/potion-resistance-minor.html">Minor Resistance Potion</a></td>
+                    <td>Potion - Resistance</td>
+                    <td>100G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/m/potion-stamina-minor.html">Minor Stamina Potion</a></td>
+                    <td>Potion - Stamina</td>
+                    <td>100G</td>
+                </tr>
+            </div>
+            <div id="n">
+                <tr>
+                    <td><a href="items/n/potion-health-normal.html">Normal Health Potion</a></td>
+                    <td>Potion - Healing</td>
+                    <td>300G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/n/potion-resistance-normal.html">Normal Resistance Potion</a></td>
+                    <td>Potion - Resistance</td>
+                    <td>300G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/n/potion-stamina-normal.html">Normal Stamina Potion</a></td>
+                    <td>Potion - Stamina</td>
+                    <td>300G</td>
+                </tr>
+            </div>
+            <div id="o">
+            </div>
+            <div id="p">
+            </div>
+            <div id="q">
+            </div>
+            <div id="r">
+            </div>
+            <div id="s">
+            </div>
+            <div id="t">
+            </div>
+            <div id="u">
+            </div>
+            <div id="v">
+            </div>
+            <div id="w">
+            </div>
+            <div id="x">
+            </div>
+            <div id="y">
+            </div>
+            <div id="z">
+            </div>
+        </table>
+        <script>
+            function searchItems() {
+              // Declare variables
+              var input, filter, table, tr, td, i, txtValue;
+              input = document.getElementById("itemInput");
+              filter = input.value;
+              table = document.getElementById("dataTable");
+              tr = table.getElementsByTagName("tr");
+            
+              // Loop through all table rows, and hide those who don't match the search query
+              for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                  txtValue = td.textContent || td.innerText;
+                  if (txtValue.indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                  } else {
+                    tr[i].style.display = "none";
+                  }
+                }
+              }
+            }
+            function searchTypes() {
+              // Declare variables
+              var input, filter, table, tr, td, i, txtValue;
+              input = document.getElementById("typeInput");
+              filter = input.value;
+              table = document.getElementById("dataTable");
+              tr = table.getElementsByTagName("tr");
+            
+              // Loop through all table rows, and hide those who don't match the search query
+              for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[1];
+                if (td) {
+                  txtValue = td.textContent || td.innerText;
+                  if (txtValue.indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                  } else {
+                    tr[i].style.display = "none";
+                  }
+                }
+              }
+            }
+            function searchCosts() {
+              // Declare variables
+              var input, filter, table, tr, td, i, txtValue;
+              input = document.getElementById("costInput");
+              filter = input.value;
+              table = document.getElementById("dataTable");
+              tr = table.getElementsByTagName("tr");
+            
+              // Loop through all table rows, and hide those who don't match the search query
+              for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[2];
+                if (td) {
+                  txtValue = td.textContent || td.innerText;
+                  if (txtValue.indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                  } else {
+                    tr[i].style.display = "none";
+                  }
+                }
+              }
+            }
+        </script>
+    </body>
+</html>
