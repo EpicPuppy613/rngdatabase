@@ -2,17 +2,195 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="style.css">
         <title>Dice Adventure Database</title>
     </head>
     <body>
-        <input type="text" onkeyup="searchFunction()" placeholder="search here" title="search">
-        <table align="center">
-            <tr class = "header">
-            <th style="width:33%;">Item</th>
-            <th style="width:33%;">Type</th>
-            <th style="width:33%;">Cost</th>
+        <table>
+            <tr>
+                <th class = "table"><input class="input" id="itemInput" type="text" onkeyup="searchItems()" placeholder="Search Items" title="search"></th>
+                <th class = "table"><input class="input" id="typeInput" type="text" onkeyup="searchTypes()" placeholder="Search Types" title="search"></th>
+                <th class = "table"><input class="input" id="costInput" type="text" onkeyup="searchCosts()" placeholder="Search Costs" title="search"></th>
             </tr>
         </table>
+        <table id="dataTable">
+            <tr class = "header">
+            <th class = "table">Item</th>
+            <th class = "table">Type</th>
+            <th class = "table">Cost</th>
+            </tr>
+            <div id="a">
+                <tr>
+                    <td><a href="items/a/air-wand.html">Air Wand</a></td>
+                    <td>Magic - Air</td>
+                    <td>1000G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/a/aqueous-wand.html">Aqueous Wand</a></td>
+                    <td>Magic - Water</td>
+                    <td>2500G</td>
+                </tr>
+            </div>
+            <div id="b">
+            </div>
+            <div id="c">
+                <tr>
+                    <td><a href="items/c/chainmail-armor.html">Chainmail Armor</a></td>
+                    <td>Chainmail - Armor - Body</td>
+                    <td>1000G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/c/chainmail-boots.html">Chainmail Boots</a></td>
+                    <td>Chainmail - Armor - Boots</td>
+                    <td>500G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/c/copper-shield-durable.html">Copper Durable Shield</a></td>
+                    <td>Copper - Shield - Durable</td>
+                    <td>500G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/c/copper-shield-flimsy.html">Copper Flimsy Shield</a></td>
+                    <td>Copper - Shield - Flimsy</td>
+                    <td>200G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/c/chainmail-helmet.html">Chainmail Helmet</a></td>
+                    <td>Chainmail - Armor - Helmet</td>
+                    <td>500G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/c/copper-sword-long.html">Copper Longsword</a></td>
+                    <td>Copper - Sword - Long</td>
+                    <td>200G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/c/copper-screw.html">Copper Screw</a></td>
+                    <td>Copper - Screw - Repair</td>
+                    <td>50G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/c/copper-sword-short.html">Copper Shortsword</a></td>
+                    <td>Copper - Sword - Short</td>
+                    <td>150G</td>
+                </tr>
+                <tr>
+                    <td><a href="items/c/copper-wrench.html">Copper Wrench</a></td>
+                    <td>Copper - Wrench - Repair</td>
+                    <td>150G</td>
+                </tr>
+            </div>
+            <div id="d">
+            </div>
+            <div id="e">
+            </div>
+            <div id="f">
+            </div>
+            <div id="g">
+            </div>
+            <div id="h">
+            </div>
+            <div id="i">
+            </div>
+            <div id="j">
+            </div>
+            <div id="k">
+            </div>
+            <div id="l">
+            </div>
+            <div id="m">
+            </div>
+            <div id="n">
+            </div>
+            <div id="o">
+            </div>
+            <div id="p">
+            </div>
+            <div id="q">
+            </div>
+            <div id="r">
+            </div>
+            <div id="s">
+            </div>
+            <div id="t">
+            </div>
+            <div id="u">
+            </div>
+            <div id="v">
+            </div>
+            <div id="w">
+            </div>
+            <div id="x">
+            </div>
+            <div id="y">
+            </div>
+            <div id="z">
+            </div>
+        </table>
+        <script>
+            function searchItems() {
+              // Declare variables
+              var input, filter, table, tr, td, i, txtValue;
+              input = document.getElementById("itemInput");
+              filter = input.value.toUpperCase();
+              table = document.getElementById("dataTable");
+              tr = table.getElementsByTagName("tr");
+            
+              // Loop through all table rows, and hide those who don't match the search query
+              for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                  txtValue = td.textContent || td.innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                  } else {
+                    tr[i].style.display = "none";
+                  }
+                }
+              }
+            }
+            function searchTypes() {
+              // Declare variables
+              var input, filter, table, tr, td, i, txtValue;
+              input = document.getElementById("typeInput");
+              filter = input.value.toUpperCase();
+              table = document.getElementById("dataTable");
+              tr = table.getElementsByTagName("tr");
+            
+              // Loop through all table rows, and hide those who don't match the search query
+              for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[1];
+                if (td) {
+                  txtValue = td.textContent || td.innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                  } else {
+                    tr[i].style.display = "none";
+                  }
+                }
+              }
+            }
+            function searchCosts() {
+              // Declare variables
+              var input, filter, table, tr, td, i, txtValue;
+              input = document.getElementById("costInput");
+              filter = input.value.toUpperCase();
+              table = document.getElementById("dataTable");
+              tr = table.getElementsByTagName("tr");
+            
+              // Loop through all table rows, and hide those who don't match the search query
+              for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[2];
+                if (td) {
+                  txtValue = td.textContent || td.innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                  } else {
+                    tr[i].style.display = "none";
+                  }
+                }
+              }
+            }
+        </script>
     </body>
 </html>

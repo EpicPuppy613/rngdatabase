@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.table {
+    width: 33%;
+    font-size: 1.5em;
+}
+table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#dataTable {
+    border: 2px solid black;
+}
