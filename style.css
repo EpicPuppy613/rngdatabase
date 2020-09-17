@@ -33,3 +33,30 @@ a {
 .button:hover {
     background: #aaffff
 }
+.magic {
+    color: magenta;
+}
+.air {
+    color: cyan;
+}
+.water {
+    color: teal;
+}
+.disarm {
+    color: red;
+}
+.earth {
+    color: #8b4513;
+}
+.electric {
+    color: yellow;
+}
+.healing {
+    color: pink;
+}
+.fire {
+    color: orange;
+}
+.mana {
+    color: blue;
+}
