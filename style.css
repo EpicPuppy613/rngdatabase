@@ -16,6 +16,7 @@ table {
 #dataTable {
     border: 2px solid black;
     border-radius: 10px;
+    background: #dfffff
 }
 a {
     text-decoration: none;
